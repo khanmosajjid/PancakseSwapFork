@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import BundleAnalyzer from '@next/bundle-analyzer'
 import { withWebSecurityHeaders } from '@pancakeswap/next-config/withWebSecurityHeaders'
@@ -232,6 +233,6 @@ const config = {
 }
 
 export default withVercelToolbar(
-  // withBundleAnalyzer(withVanillaExtract(withSentryConfig(withWebSecurityHeaders(config)), sentryWebpackPluginOptions)),
+
   withBundleAnalyzer(withVanillaExtract(withWebSecurityHeaders(config))),
 )
